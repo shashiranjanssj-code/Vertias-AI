@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.5in;
+    size: letter portrait;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  header, nav, footer, button, .print\\:hidden, #root > div > header, .no-print {
+    display: none !important;
+  }
+
+  #printable-resume {
+    display: block !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    color: #111111 !important;
+    background: #ffffff !important;
+  }
+
+  /* Prevent awkward page breaks inside experience roles */
+  #printable-resume section > div {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}

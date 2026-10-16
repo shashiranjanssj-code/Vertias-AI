@@ -1,0 +1,6 @@
+{
+  "name": "Veritas ATS · Anti-AI Resume Studio",
+  "description": "ATS-beating resume builder featuring real-time Anti-AI Humaniser, deep ATS score auditing, multi-resume ground base repository, job description keyword matching, and adaptive cover letters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
